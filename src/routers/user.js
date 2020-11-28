@@ -129,7 +129,7 @@ router.delete('/users/me', auth, async (req, res) => {
         res.send(req.user)
         res.send(user)
     } catch (e) {
-        res.status(500).send(e)
+        res.status(500).send()
     }
 })
 
